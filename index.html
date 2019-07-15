@@ -1,0 +1,15 @@
+<html>
+
+
+
+<script>
+function ieVersion(uaString) {
+  uaString = uaString || navigator.userAgent;
+    var match = /\b(MSIE |Trident.*?rv:|Edge\/)(\d+)/.exec(uaString);
+      if (match) return parseInt(match[2])
+      }
+
+</script>
+</html>
+
+<!-- reference: https://makandracards.com/makandra/53475-minimal-javascript-function-to-detect-version-of-internet-explorer-or-edge -->
